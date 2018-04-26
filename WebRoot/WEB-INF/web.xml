@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  	
+  	<servlet>
+  		<servlet-name>user</servlet-name>
+  		<servlet-class>com.ht.servlet.UserServlet</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+  		<servlet-name>user</servlet-name>
+  		<url-pattern>/user</url-pattern>
+  	</servlet-mapping>
+  	
+  	<servlet>
+  		<servlet-name>userinfo</servlet-name>
+  		<servlet-class>com.ht.servlet.UserinfoServlet</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+  		<servlet-name>userinfo</servlet-name>
+  		<url-pattern>/userinfo</url-pattern>
+  	</servlet-mapping>
+  	
+  	<servlet>
+  		<servlet-name>tickling</servlet-name>
+  		<servlet-class>com.ht.servlet.ticklingServlet</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+  		<servlet-name>tickling</servlet-name>
+  		<url-pattern>/tickling</url-pattern>
+  	</servlet-mapping>
+  	
+  	<servlet>
+  		<servlet-name>count</servlet-name>
+  		<servlet-class>com.ht.servlet.CountServlet</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+  		<servlet-name>count</servlet-name>
+  		<url-pattern>/count</url-pattern>
+  	</servlet-mapping>
+  	
+  	<servlet>
+  		<servlet-name>index</servlet-name>
+  		<servlet-class>com.ht.servlet.IndexServlet</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+  		<servlet-name>index</servlet-name>
+  		<url-pattern>/index</url-pattern>
+  	</servlet-mapping>
+  	
+  	<servlet>
+  		<servlet-name>images</servlet-name>
+  		<servlet-class>com.ht.servlet.ImagesServlet</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+  		<servlet-name>images</servlet-name>
+  		<url-pattern>/images</url-pattern>
+  	</servlet-mapping>
+  	
+	 <servlet>
+  		<servlet-name>details</servlet-name>
+  		<servlet-class>com.ht.servlet.DetailsServlet</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+  		<servlet-name>details</servlet-name>
+  		<url-pattern>/details</url-pattern>
+  	</servlet-mapping>
+  	
+  	<servlet>
+  		<servlet-name>admin</servlet-name>
+  		<servlet-class>com.ht.servlet.AdminServlet</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+  		<servlet-name>admin</servlet-name>
+  		<url-pattern>/admin</url-pattern>
+  	</servlet-mapping>
+  	
+  	<servlet>
+  		<servlet-name>tops</servlet-name>
+  		<servlet-class>com.ht.servlet.TopsServlet</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+  		<servlet-name>tops</servlet-name>
+  		<url-pattern>/tops</url-pattern>
+  	</servlet-mapping>
+  	
+  	 <filter>
+	  	<filter-name>character</filter-name>
+	  	<filter-class>com.ht.filter.CharacterFilter</filter-class> 	
+	  </filter>
+	  <filter-mapping>
+		  <filter-name>character</filter-name>
+		  <url-pattern>/*</url-pattern>
+	  </filter-mapping>
+  	
+  	  <filter>
+	  	<filter-name>filter</filter-name>
+	  	<filter-class>com.ht.filter.UserFilter</filter-class> 	
+	  </filter>
+	  <filter-mapping>
+		  <filter-name>filter</filter-name>
+		  <url-pattern>/personal.jsp</url-pattern>
+	  </filter-mapping>
+	  <filter-mapping>
+		  <filter-name>filter</filter-name>
+		  <url-pattern>/uploading.jsp</url-pattern>
+	  </filter-mapping>
+	  <filter-mapping>
+		  <filter-name>filter</filter-name>
+		  <url-pattern>/tickling.jsp</url-pattern>
+	  </filter-mapping>
+	  <filter-mapping>
+		  <filter-name>filter</filter-name>
+		  <url-pattern>/main.jsp</url-pattern>
+	  </filter-mapping>
+  	
+    <servlet>
+        <servlet-name>Kaptcha</servlet-name>
+        <servlet-class>com.google.code.kaptcha.servlet.KaptchaServlet</servlet-class>  
+        	<!-- 验证码图片宽度 -->  
+		   <init-param>  
+		     <param-name>kaptcha.image.width</param-name>  
+		     <param-value>100</param-value>  
+		   </init-param>  
+		   <!-- 验证码图片高度 -->  
+		   <init-param>  
+		     <param-name>kaptcha.image.height</param-name>  
+		     <param-value>50</param-value>  
+		   </init-param> 
+		   <init-param>  
+			     <param-name>kaptcha.textproducer.font.size</param-name>  
+			     <param-value>40</param-value>  
+  		 </init-param> 
+  		  <init-param>  
+    		 <param-name>kaptcha.textproducer.font.names</param-name>  
+    		 <param-value>楷体</param-value>  
+   			</init-param> 
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Kaptcha</servlet-name>
+        <url-pattern>/kaptcha.jpg</url-pattern>
+    </servlet-mapping>
+    
+  
+  
+  
+</web-app>

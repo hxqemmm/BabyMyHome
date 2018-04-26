@@ -1,0 +1,133 @@
+/*----------------------------------------------------------------
+		
+	File Name:          style.css 	
+	Description:        Invokr - Premium Landing Page Template
+	Skin Color: 		Blue
+
+---------------------------------------------------------------- */
+
+/* =Globals
+----------------------------------------------- */
+
+a:link, a:active, a:visited {
+	color:#c22800;
+	font-size:12px;
+	text-decoration:none;
+}
+a:hover {
+	text-decoration:underline;
+}
+
+/* =Structure
+----------------------------------------------- */
+
+body,
+#footer {
+	border-color:#b9e7ee;
+}
+#footer,
+#signup-form-container {
+	background:#b9e7ee url("../img/skin_blue/bg-noise.jpg") repeat;
+}
+
+
+/* =Header
+----------------------------------------------- */
+
+#logo {
+	background:url("../img/skin_blue/logo.png") no-repeat;
+}
+
+
+/* =Main
+----------------------------------------------- */
+
+#main #signup, 
+a.btn-cta {
+	background:url("../img/skin_blue/bg-btn.png") repeat-x;
+    border-left: 1px solid #019db4;
+    border-right: 1px solid #019db4;
+    color: #FFFFFF;
+	font:bold 15px/44pt 'Cabin', Arial, Helvetica, sans-serif;
+}
+#main #signup, 
+a.btn-cta,
+#signup-form h2 {
+	text-shadow:1px 1px 0 #018a9a;
+}
+
+/* Hover state */
+
+#main #signup:hover, 
+a.btn-cta:hover {
+  	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+	filter: alpha(opacity=80);
+	opacity:0.8;
+	text-decoration:none;
+}
+#main #signup {
+    font-size: 24px;
+    padding: 15px 55px;
+}
+
+/* Global Website Sprite */
+
+#feature-list li,
+#close,
+span.icon {
+	background-image:url("../img/skin_blue/sprite.png");
+	background-repeat:no-repeat;
+}
+
+
+/* =Footer
+----------------------------------------------- */
+
+#footer h2 {
+	color:#b9e7ee;
+}
+#footer p,
+#signup-form p {
+	color:#FFFFFF;
+    margin: 0;
+}
+#footer #top-arrow {
+    background: url("../img/skin_blue/arrow.png") no-repeat;
+}
+#footer #copyright {
+	border-top:1px solid #37b6c9;
+	border-bottom:1px solid #37b6c9;
+}
+#footer #copyright p, 
+#footer #copyright a {
+	color:#b9e7ee;
+}
+
+
+/* =Form
+----------------------------------------------- */
+
+input[type="text"],
+textarea {
+	border-color:#d4d4d4;
+}
+input[type="submit"] {
+	background:#6d6d6d;
+}
+input[type="submit"]:hover {
+	background:#C22800;
+}
+
+
+/* =Miscellaneous
+----------------------------------------------- */
+
+/* Sign Up Form Slider */
+
+#signup-form-container {
+	border-bottom:5px solid #b9e7ee;
+}
+#signup-form input,
+#signup-form textarea {
+	border-color:#00798b;
+}

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/WebRoot/WEB-INF/lib/smartupload.jar!/" />
+      <root url="jar://$PROJECT_DIR$/WebRoot/WEB-INF/lib/sql2005jdbc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/WebRoot/WEB-INF/lib/kaptcha-2.3.2.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../apache-tomcat-9.0.0.M22/lib" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/../../apache-tomcat-9.0.0.M22/lib" recursive="false" />
+  </library>
+</component>

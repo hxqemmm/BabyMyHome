@@ -1,0 +1,21 @@
+/*----------------------------------------------------------------
+		
+	File Name:          ie.css 	
+	Description:        Invokr - Premium Landing Page Template 	
+
+---------------------------------------------------------------- */
+
+a.btn-cta {
+	padding:20px;
+	display:block;
+	margin:0;
+	line-height:14pt;
+	font-size:14px;
+}
+#signup-form,
+#signup-form-container {
+	zoom: 1;
+}
+#signup-form input {
+	width:370px;
+}
